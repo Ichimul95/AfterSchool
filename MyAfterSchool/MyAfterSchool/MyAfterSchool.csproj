@@ -148,20 +148,98 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\fonts\font-awesome.min.css" />
+    <Content Include="Assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="Assets\banner\css\settings.css" />
+    <Content Include="Assets\banner\fonts\revicons.svg" />
+    <Content Include="Assets\banner\images\arrowleft.png" />
+    <Content Include="Assets\banner\images\arrowright.png" />
+    <Content Include="Assets\banner\images\arrow_large_left.png" />
+    <Content Include="Assets\banner\images\arrow_large_right.png" />
+    <Content Include="Assets\banner\images\arrow_left.png" />
+    <Content Include="Assets\banner\images\arrow_left2.png" />
+    <Content Include="Assets\banner\images\arrow_right.png" />
+    <Content Include="Assets\banner\images\arrow_right2.png" />
+    <Content Include="Assets\banner\images\black50.png" />
+    <Content Include="Assets\banner\images\boxed_bgtile.png" />
+    <Content Include="Assets\banner\images\bullet.png" />
+    <Content Include="Assets\banner\images\bullets.png" />
+    <Content Include="Assets\banner\images\bullets2.png" />
+    <Content Include="Assets\banner\images\bullet_boxed.png" />
+    <Content Include="Assets\banner\images\coloredbg.png" />
+    <Content Include="Assets\banner\images\grain.png" />
+    <Content Include="Assets\banner\images\gridtile.png" />
+    <Content Include="Assets\banner\images\gridtile_3x3.png" />
+    <Content Include="Assets\banner\images\gridtile_3x3_white.png" />
+    <Content Include="Assets\banner\images\gridtile_white.png" />
+    <Content Include="Assets\banner\images\large_left.png" />
+    <Content Include="Assets\banner\images\large_right.png" />
+    <Content Include="Assets\banner\images\loader.gif" />
+    <Content Include="Assets\banner\images\loader2.gif" />
+    <Content Include="Assets\banner\images\navigdots.png" />
+    <Content Include="Assets\banner\images\navigdots_bgtile.png" />
+    <Content Include="Assets\banner\images\shadow1.png" />
+    <Content Include="Assets\banner\images\shadow2.png" />
+    <Content Include="Assets\banner\images\shadow3.png" />
+    <Content Include="Assets\banner\images\small_left.png" />
+    <Content Include="Assets\banner\images\small_left_boxed.png" />
+    <Content Include="Assets\banner\images\small_right.png" />
+    <Content Include="Assets\banner\images\small_right_boxed.png" />
+    <Content Include="Assets\banner\images\timer.png" />
+    <Content Include="Assets\banner\images\timerdot.png" />
+    <Content Include="Assets\banner\images\transparent.jpg" />
+    <Content Include="Assets\banner\images\white50.png" />
+    <Content Include="Assets\banner\js\jquery.themepunch.enablelog.js" />
+    <Content Include="Assets\banner\js\jquery.themepunch.revolution.js" />
+    <Content Include="Assets\banner\js\jquery.themepunch.tools.min.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\custom.css" />
+    <Content Include="Assets\css\color-option1.css" />
+    <Content Include="Assets\css\style.css" />
+    <Content Include="Content\images\footer-bg-1.png" />
+    <Content Include="Content\images\slider-1.jpg" />
+    <Content Include="Content\images\slider-2.jpg" />
+    <Content Include="Content\images\slider-3.jpg" />
+    <Content Include="Content\images\slider-4.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.10.2.js" />
-    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="Assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="Assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Assets\fonts\FontAwesome.otf" />
+    <Content Include="Assets\banner\images\arrows.psd" />
+    <Content Include="Assets\banner\images\bullets.psd" />
+    <Content Include="Assets\banner\images\small_arrows.psd" />
+    <Content Include="Assets\banner\fonts\revicons.eot" />
+    <Content Include="Assets\banner\fonts\revicons.ttf" />
+    <Content Include="Assets\banner\fonts\revicons.woff" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\custom.js" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
@@ -181,28 +259,17 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Home\_Banner.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.woff" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="fonts\glyphicons-halflings-regular.eot" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
