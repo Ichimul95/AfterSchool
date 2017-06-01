@@ -14,5 +14,10 @@ namespace MyAfterSchool.Controllers
             return PartialView("_Benefits");
         }
 
+        public ActionResult Media()
+        {
+            return PartialView("_Media");
+        }
+
     }
 }

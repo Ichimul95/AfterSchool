@@ -24,6 +24,7 @@ namespace MyAfterSchool
                  .Include("~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/Plugins")
+                 .Include("~/Scripts/owl.carousel.js")
                  .Include("~/Scripts/custom.js")
                  .Include("~/Scripts/google-map.js")
                  .Include("~/Assets/banner/js/jquery.themepunch.tools.min.js")
@@ -34,6 +35,7 @@ namespace MyAfterSchool
 
             bundles.Add(new StyleBundle("~/Plugins/css")
                 .Include("~/Assets/css/color-option1.css")
+                .Include("~/Assets/css/owl.carousel.css")
                 .Include("~/Assets/banner/css/settings.css")
                 .Include("~/Assets/css/style.css")
                 .Include("~/Assets/fonts/font-awesome.min.css"));

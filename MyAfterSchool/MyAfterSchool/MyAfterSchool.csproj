@@ -152,6 +152,7 @@
     <Compile Include="Services\EmailService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\css\owl.carousel.css" />
     <Content Include="Assets\fonts\font-awesome.min.css" />
     <Content Include="Assets\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\banner\css\settings.css" />
@@ -204,6 +205,8 @@
     <Content Include="Assets\css\color-option1.css" />
     <Content Include="Assets\css\style.css" />
     <Content Include="Content\images\footer-bg-1.png" />
+    <Content Include="Content\images\promotion-1.jpg" />
+    <Content Include="Content\images\SiglaAfterSchool_322x102.png" />
     <Content Include="Content\images\slider-1.jpg" />
     <Content Include="Content\images\slider-2.jpg" />
     <Content Include="Content\images\slider-3.jpg" />
@@ -251,6 +254,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\owl.carousel.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Web.config">
@@ -277,6 +281,8 @@
     <Content Include="Views\Contact\_ContactForm.cshtml" />
     <Content Include="Views\Contact\_ContactInformation.cshtml" />
     <Content Include="Views\Contact\_ContactMap.cshtml" />
+    <Content Include="Views\Home\_Parallax.cshtml" />
+    <Content Include="Views\Home\_Media.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
