@@ -25,6 +25,7 @@ namespace MyAfterSchool
 
             bundles.Add(new ScriptBundle("~/bundles/Plugins")
                  .Include("~/Scripts/custom.js")
+                 .Include("~/Scripts/google-map.js")
                  .Include("~/Assets/banner/js/jquery.themepunch.tools.min.js")
                  .Include("~/Assets/banner/js/jquery.themepunch.revolution.js")
                  .Include("~/Assets/banner/js/jquery.themepunch.enablelog.js"));

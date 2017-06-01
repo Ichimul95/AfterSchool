@@ -1,0 +1,47 @@
+﻿@model ContactViewModel
+<div class="row">
+    <div class="col-xs-12">
+        <div class="homeContactContent">
+            @using (Html.BeginForm("Index", "Contact", FormMethod.Post, new { role = "form" }))
+            {
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <i class="fa fa-user"></i>
+                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control border-color-6", placeholder = "Nume" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control border-color-5", placeholder = "Email" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            @Html.TextBoxFor(m => m.Phone, new { @class = "form-control border-color-4", placeholder = "Telefon" })
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                            @Html.TextBoxFor(m => m.Subject, new { @class = "form-control border-color-1", placeholder = "Subiect" })
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="form-group">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            @Html.TextAreaFor(m => m.Message, new { @class = "form-control border-color-3", placeholder = "Mesaj" })
+                        </div>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="formBtnArea">
+                            <button type="submit" class="btn btn-primary">Trimite</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
