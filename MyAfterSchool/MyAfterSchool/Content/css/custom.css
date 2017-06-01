@@ -1,4 +1,30 @@
-﻿/*-------------footer section-----------------*/
+﻿/*-------------general section---------*/
+.mt-20 {
+    margin-top: 20px;
+}
+
+/*-------------footer section-----------------*/
 .footerInfoArea {
     background-image: url('../images/footer-bg-1.png');
+}
+/*-----------benefits section-------------*/ 
+.benefits-title h4{
+    text-align: center;
+}
+.benefits-text p{
+    padding: 20px;
+    text-align: center;
+
+}
+/*-------------banner section---------*/
+.slider-caption p {
+    color: white;
+    font-size: 28px;
+    margin-top: 25px;
+}
+
+/*---------program section-------------*/
+
+h3.program-title {
+    margin-top: 25px !important;
 }

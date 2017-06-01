@@ -15,28 +15,28 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active dropdown singleDrop color-1">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>Home</span>
+                    <li class="active  color-1">
+                        <a href="@Url.Action("Index","Home")">
+                            <i class="fa fa-home bg-color-1" aria-hidden="true"></i> <span>Acasa</span>
                         </a>
                     </li>
-                    <li class="dropdown singleDrop color-3">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-list-ul bg-color-3" aria-hidden="true"></i> <span>pages</span></a>
+                    <li class="dropdown  color-3">
+                        <a href="@Url.Action("Index","AboutUs")"><i class="fa fa-list-ul bg-color-3" aria-hidden="true"></i> <span>Despre Noi</span></a>
                     </li>
                     <li class="dropdown singleDrop color-4">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <a href="@Url.Action("Index","Program")">
                             <i class="fa fa-pencil-square-o bg-color-4" aria-hidden="true"></i>
-                            <span>Store</span>
+                            <span>Program</span>
                         </a>
                     </li>
-                    <li class="dropdown singleDrop color-5">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <li class="dropdown  color-5">
+                        <a href="@Url.Action("Index","Price")">
                             <i class="fa fa-calendar bg-color-5" aria-hidden="true"></i>
-                            <span>Blog</span>
+                            <span>Tarif</span>
                         </a>
                     </li>
-                    <li class="dropdown singleDrop color-6">
-                        <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-gg bg-color-6" aria-hidden="true"></i> <span>Components</span></a>
+                    <li class="dropdown  color-6">
+                        <a href="@Url.Action("Index","Contact")"><i class="fa fa-calendar bg-color-6" aria-hidden="true"></i><span>Contact</span></a>
                     </li>
                 </ul>
             </div>
