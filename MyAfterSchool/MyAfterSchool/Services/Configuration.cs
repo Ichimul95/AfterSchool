@@ -8,7 +8,7 @@ namespace MyAfterSchool.Services
 {
     public class Configuration: ConfigurationSection
     {
-        Uri uri = HttpContext.Current.Request.Url;
+       
         public static Configuration GetConfiguration()
         {
             Uri uri = HttpContext.Current.Request.Url;
@@ -48,18 +48,23 @@ namespace MyAfterSchool.Services
         {
             get
             {
+                Uri uri = HttpContext.Current.Request.Url;
                 String host = uri.Host.ToString();
                 return host;
             }
-        }
+           
+    }
 
         [ConfigurationProperty("port", IsRequired = false, DefaultValue = 25)]
         public int Port
         {
             get
             {
+                Uri uri = HttpContext.Current.Request.Url;
+                
+                string port = uri.Host;
                 int result = 0;
-                if (int.TryParse(this["port"].ToString(), out result))
+                if (int.TryParse(port, out result))
                 {
                     return result;
                 }
