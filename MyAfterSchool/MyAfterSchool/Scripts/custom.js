@@ -34,17 +34,17 @@ jQuery(document).ready(function(){
     $(window).trigger('scroll');
   });
 
-//============================== SELECT BOX =========================
-  //$('.select-drop').selectbox();
+////============================== SELECT BOX =========================
+//  //$('.select-drop').selectbox();
 
-//============================== MENU DROPDOWN ON HOVER =========================
-  $('.nav .dropdown').hover(function() {
-    $(this).addClass('open');
-  },
-  function() {
-    $(this).removeClass('open');
-  }
-  );
+////============================== MENU DROPDOWN ON HOVER =========================
+//  $('.nav .dropdown').hover(function() {
+//    $(this).addClass('open');
+//  },
+//  function() {
+//    $(this).removeClass('open');
+//  }
+//  );
 
 //============================== CART =========================
 $('.cart-dropdown a').on("click",function() {
@@ -164,12 +164,12 @@ $('.cart-dropdown a').on("click",function() {
       }
     });
 //============================== COUNTER-UP =========================
-  $(document).ready(function ($) {
-    $('.counter').counterUp({
-      delay: 10,
-      time: 2000
-    });
-  });
+  //$(document).ready(function ($) {
+  //  $('.counter').counterUp({
+  //    delay: 10,
+  //    time: 2000
+  //  });
+  //});
 
   //============================== BACK TO TOP =========================
     $(document).ready(function(){ 
@@ -198,22 +198,22 @@ $('.cart-dropdown a').on("click",function() {
   });
 
 //============================== PRICE SLIDER RANGER =========================
-var minimum = 20;
-var maximum = 300;
+//var minimum = 20;
+//var maximum = 300;
 
-$( "#price-range" ).slider({
-  range: true,
-  min: minimum,
-  max: maximum,
-  values: [ minimum, maximum ],
-  slide: function( event, ui ) {
-    $( "#price-amount-1" ).val( "$" + ui.values[ 0 ] );
-    $( "#price-amount-2" ).val( "$" + ui.values[ 1 ] );
-  }
-});
+//$( "#price-range" ).slider({
+//  range: true,
+//  min: minimum,
+//  max: maximum,
+//  values: [ minimum, maximum ],
+//  slide: function( event, ui ) {
+//    $( "#price-amount-1" ).val( "$" + ui.values[ 0 ] );
+//    $( "#price-amount-2" ).val( "$" + ui.values[ 1 ] );
+//  }
+//});
 
-$( "#price-amount-1" ).val( "$" + $( "#price-range" ).slider( "values", 0 ));
-$( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
+//$( "#price-amount-1" ).val( "$" + $( "#price-range" ).slider( "values", 0 ));
+//$( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
 
 //============================== ACCORDION OR COLLAPSE ICON CHANGE =========================
   

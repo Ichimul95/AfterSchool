@@ -7,17 +7,17 @@ namespace MyAfterSchool.Models
         [StringLength(20, MinimumLength = 5)]
         public string Name { get; set; }
 
-        [Required]
-        [EmailAddress]
+        [Required(ErrorMessage = "Completarea mail-ului este obligatorie")]
+        [EmailAddress(ErrorMessage = "Email-ul nu este valid")]
         public string Email { get; set; }
 
-        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Entered phone format is not valid.")]
+        [RegularExpression(@"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Numarul de telefon nu este valid")]
         public string Phone { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Completarea subiectului este obligatorie")]
         public string Subject { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Completarea mesajului este obligatorie")]
         public string Message { get; set; }
     }
 }

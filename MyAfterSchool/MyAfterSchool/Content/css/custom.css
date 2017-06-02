@@ -28,3 +28,8 @@
 h3.program-title {
     margin-top: 25px !important;
 }
+
+/*-------------error message------------*/
+.error-form-message {
+    color: red;
+}
