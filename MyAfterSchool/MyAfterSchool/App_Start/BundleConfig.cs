@@ -25,6 +25,9 @@ namespace MyAfterSchool
 
             bundles.Add(new ScriptBundle("~/bundles/Plugins")
                  .Include("~/Scripts/owl.carousel.js")
+                 .Include("~/Assets/isotope/js/isotope-triger.js")
+                .Include("~/Assets/isotope/js/isotope.min.js")
+                .Include("~/Assets/isotope/js/jquery.fancybox.pack.js")
                  .Include("~/Scripts/custom.js")
                  .Include("~/Scripts/google-map.js")
                  .Include("~/Assets/banner/js/jquery.themepunch.tools.min.js")
@@ -36,6 +39,8 @@ namespace MyAfterSchool
             bundles.Add(new StyleBundle("~/Plugins/css")
                 .Include("~/Assets/css/color-option1.css")
                 .Include("~/Assets/css/owl.carousel.css")
+                .Include("~/Assets/isotope/css/isotope.css")
+                .Include("~/Assets/isotope/css/jquery.fancybox.css")
                 .Include("~/Assets/banner/css/settings.css")
                 .Include("~/Assets/css/style.css")
                 .Include("~/Assets/fonts/font-awesome.min.css"));

@@ -13,7 +13,7 @@ jQuery(document).ready(function(){
       };
         
       $(window).scroll(function(){
-        if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() == 0 || $(this).width() < 750)){
+        if( main_area.hasClass('bb-fixed-header') && ($(this).scrollTop() === 0 || $(this).width() < 750)){
           main_area.removeClass('bb-fixed-header').appendTo(header_area);
           navigation.animate({'margin-top': original.nav_top}, {duration: 300, queue: false, complete: function(){
             header_area.css('height', 'auto');
@@ -33,18 +33,6 @@ jQuery(document).ready(function(){
     $(window).trigger('resize');
     $(window).trigger('scroll');
   });
-
-////============================== SELECT BOX =========================
-//  //$('.select-drop').selectbox();
-
-////============================== MENU DROPDOWN ON HOVER =========================
-//  $('.nav .dropdown').hover(function() {
-//    $(this).addClass('open');
-//  },
-//  function() {
-//    $(this).removeClass('open');
-//  }
-//  );
 
 //============================== CART =========================
 $('.cart-dropdown a').on("click",function() {
@@ -116,8 +104,8 @@ $('.cart-dropdown a').on("click",function() {
     }
   });
 
-  var owl = $('.owl-carousel.commentSlider');
-  owl.owlCarousel({
+  var owlComment = $('.owl-carousel.commentSlider');
+    owlComment.owlCarousel({
     loop:true,
     margin:28,
     autoplay:false,
@@ -139,8 +127,8 @@ $('.cart-dropdown a').on("click",function() {
     }
   });
 
-  var owl = $('.owl-carousel.partnersLogoSlider');
-    owl.owlCarousel({
+  var owlLogo = $('.owl-carousel.partnersLogoSlider');
+    owlLogo.owlCarousel({
       loop:true,
       margin:28,
       autoplay:true,
@@ -163,14 +151,6 @@ $('.cart-dropdown a').on("click",function() {
         }
       }
     });
-//============================== COUNTER-UP =========================
-  //$(document).ready(function ($) {
-  //  $('.counter').counterUp({
-  //    delay: 10,
-  //    time: 2000
-  //  });
-  //});
-
   //============================== BACK TO TOP =========================
     $(document).ready(function(){ 
       $(window).scroll(function(){ 
@@ -197,23 +177,6 @@ $('.cart-dropdown a').on("click",function() {
     });
   });
 
-//============================== PRICE SLIDER RANGER =========================
-//var minimum = 20;
-//var maximum = 300;
-
-//$( "#price-range" ).slider({
-//  range: true,
-//  min: minimum,
-//  max: maximum,
-//  values: [ minimum, maximum ],
-//  slide: function( event, ui ) {
-//    $( "#price-amount-1" ).val( "$" + ui.values[ 0 ] );
-//    $( "#price-amount-2" ).val( "$" + ui.values[ 1 ] );
-//  }
-//});
-
-//$( "#price-amount-1" ).val( "$" + $( "#price-range" ).slider( "values", 0 ));
-//$( "#price-amount-2" ).val( "$" + $( "#price-range" ).slider( "values", 1 ));
 
 //============================== ACCORDION OR COLLAPSE ICON CHANGE =========================
   
@@ -269,12 +232,12 @@ $('.cart-dropdown a').on("click",function() {
     var $button = $(this);
     var oldValue = $button.parent().find('.quantity').val();
     $button.parent().find('.incr-btn[data-action="decrease"]').removeClass('inactive');
-    if ($button.data('action') == "increase") {
+    if ($button.data('action') === "increase") {
       var newVal = parseFloat(oldValue) + 1;
     } else {
      // Don't allow decrementing below 1
       if (oldValue > 1) {
-        var newVal = parseFloat(oldValue) - 1;
+         newVal = parseFloat(oldValue) - 1;
       } else {
         newVal = 1;
         $button.addClass('inactive');

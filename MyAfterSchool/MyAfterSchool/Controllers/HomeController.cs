@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using MyAfterSchool.Helper;
+using MyAfterSchool.Models;
 
 namespace MyAfterSchool.Controllers
 {
@@ -14,9 +17,11 @@ namespace MyAfterSchool.Controllers
             return PartialView("_Benefits");
         }
 
-        public ActionResult Media()
+        public ActionResult Media(MediaViewModel model)
         {
-            return PartialView("_Media");
+            string relativePath = "Content\\images\\Media\\";
+            model.mediaList = ImageHelper.GettAllImagesFromFolder(relativePath);
+            return PartialView("_Media", model);
         }
 
     }
