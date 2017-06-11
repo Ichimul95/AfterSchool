@@ -13,11 +13,6 @@ namespace MyAfterSchool.Services
             _config = Configuration.GetConfiguration();
         }
 
-        public string StabiFrom
-        {
-            get { return _config.Address; }
-        }
-
         public void SendContact(string name, string subject,string email, string phone, string message)
         {
             if (string.IsNullOrWhiteSpace(name))

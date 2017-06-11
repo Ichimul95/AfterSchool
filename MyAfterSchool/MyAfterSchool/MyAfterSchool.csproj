@@ -219,7 +219,10 @@
     <Content Include="Content\css\custom.css" />
     <Content Include="Assets\css\color-option1.css" />
     <Content Include="Assets\css\style.css" />
+    <Content Include="Content\images\Casa.jpg" />
+    <Content Include="Content\images\ClubulCopiilorPriceputi.jpg" />
     <Content Include="Content\images\footer-bg-1.png" />
+    <Content Include="Content\images\Locdejoaca.JPG" />
     <Content Include="Content\images\Media\004.JPG" />
     <Content Include="Content\images\Media\005.JPG" />
     <Content Include="Content\images\Media\006.JPG" />
@@ -253,6 +256,7 @@
     <Content Include="Content\images\slider-2.jpg" />
     <Content Include="Content\images\slider-3.jpg" />
     <Content Include="Content\images\slider-4.jpg" />
+    <Content Include="Content\images\Teatru.JPG" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
